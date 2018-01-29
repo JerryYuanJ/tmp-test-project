@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <mt-button type="primary" @click="goPage('/richText')" size="small">测试富文本</mt-button>
+    <mt-button type="primary" @click="goPage('/table')" size="small">查看表格</mt-button>
   </div>
 </template>
 
@@ -12,7 +13,7 @@
     },
     methods: {
       goPage(name){
-          this.$router.push(name)
+        this.$router.push(name)
       }
     }
   }
@@ -22,7 +23,12 @@
 <style scoped>
   .hello {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+  }
+
+  .mint-button {
+    margin-top: 10px;
+    height: 40px;
+    line-height: 40px;
   }
 </style>
