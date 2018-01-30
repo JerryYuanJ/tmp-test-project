@@ -21,7 +21,14 @@
           fixed
           align="center"
           prop="date"
-          label="日期"
+          label="日期1"
+          width="130">
+        </el-table-column>
+        <el-table-column
+          fixed
+          align="center"
+          prop="date"
+          label="日期2"
           width="130">
         </el-table-column>
         <el-table-column
@@ -79,11 +86,11 @@
   }
 
   .el-table td, .el-table th {
-    padding: 4px 0;
+    padding: 2px 0 !important;
   }
 
   .el-table {
-    font-size: 13px;
+    font-size: 13px !important;
   }
 </style>
 <script>
