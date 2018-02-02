@@ -21,20 +21,20 @@
           fixed
           align="center"
           prop="date"
-          label="日期1"
+          label="跟踪日期"
           width="130">
         </el-table-column>
         <el-table-column
           fixed
           align="center"
-          prop="date"
-          label="日期2"
+          prop="zip"
+          label="源头合同号"
           width="130">
         </el-table-column>
         <el-table-column
           prop="name"
           align="center"
-          label="姓名"
+          label="部门"
           width="120">
         </el-table-column>
         <el-table-column
@@ -100,186 +100,186 @@
         height: 600,
         tableData4: [{
           date: '2016-05-03',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-02',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-04',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-01',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-08',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-06',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-07',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-07',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-07',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-07',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-07',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-07',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-07',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-07',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-07',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-07',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-07',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-07',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-07',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-07',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-07',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-07',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-07',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-07',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-07',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }, {
           date: '2016-05-07',
-          name: '王小虎',
+          name: '国际市场经营部',
           province: '上海',
           city: '普陀区',
           address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
+          zip: "C1003A/2018"
         }]
       }
     },
