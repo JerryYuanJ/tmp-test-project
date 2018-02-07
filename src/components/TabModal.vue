@@ -6,57 +6,68 @@
 <template>
   <div class="tab-modal">
 
-    <mt-button @click="popupVisible=true" style="width: 100%">打开Picker</mt-button>
 
-    <mt-popup
-      style="width: 100%"
-      v-model="popupVisible"
-      position="bottom">
-      <mt-picker :slots="slots" @change="onValuesChange"></mt-picker>
-    </mt-popup>
+    <div class="footer-tab">
 
-    <mt-tabbar fixed v-model="selectTab">
-      <mt-tab-item id="text">
-        文本
-      </mt-tab-item>
-      <mt-tab-item id="data">
+      <div class="tab-item" :style="{backgroundColor:selectTab==='data'?'#eaeaea':'white'}" @click="select('data')">
+        <img src="../assets/images/data.png" width="30" height="30"/>
         数据
-      </mt-tab-item>
-    </mt-tabbar>
+      </div>
+      <div class="tab-item" :style="{backgroundColor:selectTab==='text'?'#eaeaea':'white'}" @click="select('text')">
+        <img src="../assets/images/text.png" width="30" height="30"/>
+        文本
+      </div>
+
+      <div class="tab-item" :style="{backgroundColor:selectTab==='report'?'#eaeaea':'white'}" @click="select('report')">
+        <img src="../assets/images/report.png" width="30" height="30"/>
+        报告
+      </div>
+      <div class="tab-item" :style="{backgroundColor:selectTab==='my'?'#eaeaea':'white'}" @click="select('my')">
+        <img src="../assets/images/my.png" width="30" height="30"/>
+        我的
+      </div>
+
+    </div>
+
   </div>
 </template>
 <style>
+  .footer-tab {
+    height: 60px;
+    width: 100%;
+    background-color: #c0ccda;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tab-item {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
 </style>
 <script>
+
   export default {
     data(){
       return {
         selectTab: 'text',
-        popupVisible: false,
-        slots: [
-          {
-            flex: 1,
-            values: ['2015-01', '2015-02', '2015-03', '2015-04', '2015-05', '2015-06'],
-            className: 'slot1',
-            textAlign: 'right'
-          }, {
-            divider: true,
-            content: '-',
-            className: 'slot2'
-          }, {
-            flex: 1,
-            values: ['2015-01', '2015-02', '2015-03', '2015-04', '2015-05', '2015-06'],
-            className: 'slot3',
-            textAlign: 'left'
-          }
-        ]
+        mData:[{text:'体育',value:'sports'},{text:'经济',value:'economy'},{text:'生活',value:'life'}
+                ,{text:'娱乐',value:'entertainment'},{text:'军事',value:'military'}]
       }
     },
     methods: {
-      onValuesChange(picker, values) {
-        if (values[0] > values[1]) {
-          picker.setSlotValue(1, values[0]);
-        }
+      select(item){
+        this.selectTab = item
       }
     }
   }
