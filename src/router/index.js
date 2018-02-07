@@ -13,12 +13,6 @@ Vue.use(Router)
 
 const router = new Router({
   mode: 'history',
-  scrollBehavior (to, from, savedPosition) {
-    // return 期望滚动到哪个的位置,前提是这个界面要能滚动，否则没有反应
-    return {
-      x:0,y:20
-    }
-  },
   routes: [
     {
       path: '/',
@@ -28,11 +22,7 @@ const router = new Router({
     {
       path: '/richText',
       name: 'RichTextPage',
-      component: RichTextPage,
-      beforeEnter(to, from, next){
-        console.info('enter rich text page');
-        next();
-      }
+      component: RichTextPage
     },
     {
       path: '/table',
@@ -62,19 +52,5 @@ const router = new Router({
     }
   ]
 });
-//全局守卫导航,next用来放行
-router.beforeEach((to, from, next) => {
-  console.info('global beforeEach');
-  //一个路由匹配到的所有路由记录会暴露为 $route 对象（还有在导航守卫中的路由对象）的 $route.matched 数组。
-  to.matched.some(record => {
-    if(record.meta.subject){
-      console.info('meta info :'+record.meta.subject)
-    }
-  })
-  next()
-});
-//全局后置钩子，不会改变导航的状态
-router.afterEach((to, from) => {
-  console.info('global afterEach');
-})
+
 export default router;
