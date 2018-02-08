@@ -1,8 +1,8 @@
 <template>
   <div class="hello">
     <mt-button type="primary" @click="goPage('/richText')" size="small">测试富文本</mt-button>
-    <mt-button type="primary" @click="goPage('/table')" size="small">测试element表格</mt-button>
-    <mt-button type="primary" @click="goPage('/subRouter')" size="small">测试嵌套子路由</mt-button>
+    <mt-button type="primary" @click="goPage({name:'DataTable'})" size="small">测试element表格</mt-button>
+    <mt-button type="primary" @click="goPage({path:'/subRouter'})" size="small">测试嵌套子路由</mt-button>
     <mt-button type="primary" @click="goPage('/tabModal')" size="small">测试底部Tab</mt-button>
   </div>
 </template>
